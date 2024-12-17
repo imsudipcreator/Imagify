@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Outfit ;
+}
+.placeholder-color{
+  color: #f3f3f3;
+  font-weight: 300;
+}
+::-webkit-scrollbar {
+  display: none;
+}
