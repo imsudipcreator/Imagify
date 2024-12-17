@@ -48,7 +48,7 @@ const Result = () => {
      onSubmit={onSubmitHandler} className='flex flex-col min-h-[90vh] sm:justify-center items-center'>
       <div className='mb-8'>
       <div className='relative '>
-        <img src={image} className={`sm:max-w-sm ${isLoading ? '' : 'rounded-lg'}  bg-cover `}/>
+        <img src={image} className={`sm:max-w-sm ${isLoading ? '' : 'rounded-lg'} mt-14 lg:mt-4 bg-cover `}/>
         <span className={`h-1 absolute left-0 bottom-0 bg-blue-500 rounded-lg  ${isLoading ? 'w-full transition-all duration-[10s]': 'w-0' } `}></span>
         
       </div>

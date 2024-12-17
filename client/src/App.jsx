@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className=" px-4 sm:px-10 md:px-12 lg:px-20 bg-gradient-to-b from-teal-50 to-orange-50 min-h-screen">
-      <ToastContainer position='bottom-right' />
+      <ToastContainer position='bottom-center' />
       <NavigationBar/>
       {showLogin && <Login/>}
     <Routes>

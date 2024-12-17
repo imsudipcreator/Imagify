@@ -31,7 +31,7 @@ const NavigationBar = () => {
             </button>
             <button className=" rounded-full flex items-center justify-center lg:gap-2 cursor-default">
               <div className="lg:flex items-center justify-center font-semibold hidden">
-                Hi {capitalizeFirstLetter(user.name)} 👋 !!
+                Hi, {capitalizeFirstLetter(user.name)} 👋 !!
               </div>
              </button>
              {/* <button className="relative">

@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import { assets } from '../assets/assets'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
-import { delay, motion } from "motion/react"
+import { motion } from "motion/react"
 
 const Header = () => {
     const {user , setShowLogin} = useContext(AppContext)
@@ -14,6 +14,9 @@ const Header = () => {
       setShowLogin(true)
     }
     }
+    function capitalizeFirstLetter(val) {
+      return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+  }
 
 
   return (
@@ -25,7 +28,7 @@ const Header = () => {
 
     >
        {user? 
-      <div className='sm:hidden text-center text-4xl'>Hi, Sudip 👋 !!</div>
+      <div className='sm:hidden text-center text-4xl'>Hi, {capitalizeFirstLetter(user.name)} 👋 !!</div>
       : null
      }
 
